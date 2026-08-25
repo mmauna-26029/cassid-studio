@@ -1,0 +1,89 @@
+body {
+  font-family: "Reddit Sans Condensed", "Zen Kaku Gothic New", sans-serif;
+  color: #3a3a3a;
+  background-color: #f3f3f3;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-image: url("../img/top/back-img.png");
+  background-size: 5%;
+  background-position: center;
+  background-repeat: repeat;
+  opacity: 0.5;
+  z-index: -1;
+}
+
+.fv {
+  max-width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.fv-textarea {
+  margin-top: 280px;
+  margin-left: 80px;
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 0.02em;
+}
+
+.fv-nav {
+  position: fixed;
+  text-decoration: none;
+  color: #a4a4a4;
+  font-size: 15px;
+  top: 500px;
+  left: 80px;
+}
+
+.fv-nav li {
+  display: flex;
+  white-space: nowrap;
+  margin-bottom: 20px;
+  align-items: center;
+}
+
+.fv-nav li::after {
+  content: "";
+  width: 0px;
+  height: 1px;
+  top: 55%;
+  right: 0;
+  margin-left: 10px;
+  background-color: #a4a4a4;
+  transition: width 0.5s ease-in-out;
+  transition-delay: 0.3s;
+}
+
+.fv-nav li:hover::after {
+  width: 40px;
+}
+
+.fv-nav li img {
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+}
+
+.nav-list-06::before {
+  content: "";
+  width: 124px;
+  margin-bottom: 15px;
+  border-top: 1px solid #a4a4a4;
+}
+
+.fv-img-tower {
+  width: 660px;
+  height: 100vh;
+}
